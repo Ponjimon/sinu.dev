@@ -1,32 +1,28 @@
+import { Box, Heading, Link, ListItem, UnorderedList } from '@chakra-ui/react';
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-            target="_blank"
-          >
+    <Box p={8}>
+      <Heading as="h1" size="xl">
+        Welcome to Remix
+      </Heading>
+      <UnorderedList>
+        <ListItem>
+          <Link isExternal href="https://remix.run/tutorials/blog">
             15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-            target="_blank"
-          >
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link isExternal href="https://remix.run/tutorials/jokes">
             Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a href="https://remix.run/docs" rel="noreferrer" target="_blank">
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link isExternal href="https://remix.run/docs">
             Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+          </Link>
+        </ListItem>
+      </UnorderedList>
+    </Box>
   );
 }
